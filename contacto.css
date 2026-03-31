@@ -1,0 +1,419 @@
+
+/* == EN GENERAL DE LA PAGINA ============================================================================== */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+/* == FINAL DE GENERAL DE LA PAGINA ======================================================================= */
+
+nav{                                                       /* == CONTAINER NAV ======================= */                                       
+        display: block;
+        font-family: 'Barlow', sans-serif;
+    }
+
+    #Barra-Buscador{                                           /* -- Section Barra Buscador -------------- */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #2F8F9D!important;
+        padding: 25px 50px 20px 50px;  
+        margin: none; 
+    }
+
+    .Logo1 img{                                                                          /*  Logo1 imagen  */
+        width: 170px;
+        height: auto;
+        text-align: left; 
+        padding: 0%;
+        margin-bottom: 10px;
+    }
+
+    .Contenedor{                                                                /*  Buscador Imput  */
+        width: 650px;
+        padding: 0px 15px 0px 15px;
+        align-items: center;
+    }
+
+    .Envios-Compras{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+        gap: 15px; /* espacio entre iconos */
+    }
+
+    .Envios1 img{                                                                       /*  Envíos imagen  */
+        width:55px;
+        height: auto;
+        align-items: end;    
+
+    }
+
+    .Compras1 img{                                                                     /*  Compras imagen  */
+        width: 50px;
+        height: auto;
+        align-items: end;
+    }
+
+    #Barra-Navegador{                                         /* -- Section Barra Navegador -------------- */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 10px 50px 10px 50px;
+        
+    }
+
+    .Navegador {                                                                            /*  Navegador  */
+        width: 60%;
+        list-style: none;        /* quita las viñetas */
+        margin: 0;
+        padding: 0;
+        display: flex;           /* coloca los elementos en línea horizontal */
+        justify-content: center; /* opcional: centra toda la lista */
+        background-color: white;
+    }
+
+    .Navegador li {                                                                      /*  Navegador li  */
+        width: 25%;
+        margin: 0px 20px; 
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .Navegador a {                                                                        /*  Navegador a  */
+        text-decoration: none;   /* quita el subrayado */
+        color: black;
+        font-weight: bold;
+        transition: color 0.8s;  /* animación suave */
+    }
+
+    .Navegador a:hover {                                                              /*  Navegador hover  */
+        width: 18%;
+        color: rgb(40, 123, 148);
+    }
+
+    .Redes1 img{                                                                         /*  Redes imagen  */
+        width: 50px;
+        height: auto;
+        padding: 0px 10px 0px 10px;
+        object-fit: cover; 
+    }
+        
+    .Redes1 a{                                                                             /*  Redes link  */
+        text-decoration: none;
+    }
+/* == E.S. NAV FINAL ===================================================================================== */
+
+
+
+/* Fondo animado pastel */
+body {
+  font-family: 'Barlow', sans-serif;
+  padding: 10px 50px 10px 50px;       
+  overflow-x: hidden;
+}
+
+.contenedor-contacto{
+  
+
+}
+
+
+/* Contenedor general */
+.contenedor-contacto {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 1000px;
+  margin: 60px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  background-color: rgba(255,255,255,0.9);
+  backdrop-filter: blur(5px);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Parte izquierda (color pastel rosado) */
+.info-contacto {
+  background-color: #ffc9de;
+  color: #444;
+  flex: 1 1 40%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.info-contacto h2 {
+  font-size: 1.8em;
+  color: #d63384;
+  margin-bottom: 15px;
+}
+
+.info-contacto p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Redes sociales */
+.redes p {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+
+/* Parte derecha (formulario) */
+.formulario {
+  flex: 1 1 60%;
+  padding: 40px;
+}
+
+.formulario h2 {
+  color: #444;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.formulario p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.fila {
+  display: flex;
+  gap: 15px;
+}
+
+.fila input, textarea {
+  width: 100%;
+  padding:10px;
+  border: 1px solid #f8cdda;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  transition: border 0.3s, box-shadow 0.3s;
+  background-color: #fff;
+}
+
+.fila input:focus, textarea:focus {
+  border: 2px solid #ff9ebf;
+  box-shadow: 0 0 8px rgba(255,158,191,0.5);
+}
+
+/* Botón */
+button {
+  background-color: #ff9ebf;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #ff7fa1;
+  transform: scale(1.05);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* Responsive (celulares) */
+@media (max-width: 768px) {
+  .contenedor-contacto {
+    flex-direction: column;
+  }
+  .info-contacto, .formulario {
+    flex: 1 1 100%;
+  }
+  .fila {
+    flex-direction: column;
+  }
+}
+
+
+/* == E.S. FOOTER ======================================================================================== */
+    footer{                                                      /* == CONTAINER FOOTER ================== */
+        display: block;
+        background-color: black;
+        font-family: "Poppins", sans-serif;     
+    }
+
+    #Pie1{                                                     /* -- Sección Pie 1 ----------------------- */
+        display: flex;
+        justify-content: space-around;
+        align-items:flex-start;
+        text-align: left;
+        padding: 30px 50px 20px 50px;
+    }
+
+    .Logo2{                                                                                     /*  Logo2  */
+        display: flex;
+        flex-direction: column; /* imagen arriba, texto abajo */
+        align-items: center;    /* centra horizontalmente */
+        text-align: left;
+        width: 220px;
+    }
+
+    .Logo2 img{                                                                           /*  Logo2 imagen */
+        width: 150px;
+        height: auto;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .Pie-Texto-Logo{    
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;                                                              /*  Texto del Logo  */
+        letter-spacing: 0.3px;
+        line-height: 2;
+        text-align: left;
+        margin: 0px;
+    }
+        
+    .SobreNosotros{                                                                    /*  Sobre Nosotros  */
+        margin: 0px 20px 0px 20px;
+    }
+
+    .SobreNosotros h5{
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        line-height: 2;
+    }
+
+    .SobreNosotros ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .SobreNosotros a{
+        color: white;
+        font-size: 14px;
+        letter-spacing: 0.3px;
+        line-height: 2.5;
+        text-decoration: none;
+    }
+
+    li:hover{
+        transform: translateX(8px)
+    }
+
+    a:hover {
+        color: #5ad6df;
+    }
+
+    .Pagos-Envios{                                                                     /*  Pagos y Envíos  */                                                    
+        display: block;
+        margin: 0px 20px 0px 20px;
+    }
+
+    .Pagos-Envios h5{
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        line-height: 2;
+    }
+
+    .Pagos-Envios ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .Pagos-Envios li{
+        color: white;
+        font-size: 14px;
+        letter-spacing: 0.3px;
+        line-height: 2.5;
+        text-decoration: none;
+    }
+
+    .Ayuda{                                                                          /*  Ayuda al Cliente  */
+        margin: 0px 20px 0px 20px;
+    }
+
+    .Ayuda h5{
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        line-height: 2;
+    }
+
+    .Ayuda ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .Ayuda a{
+        color: white;
+        font-size: 14px;
+        letter-spacing: 0.3px;
+        line-height: 2.5;
+        text-decoration: none;
+    }
+
+    li:hover{
+        transform: translateX(8px)
+    }
+
+    a:hover{
+        color: #5ad6df;
+    }
+
+    .Redes2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+        gap: 15px; /* espacio entre iconos */
+        justify-content: center; /* centra horizontalmente */
+        align-content: center;   /* centra verticalmente */
+        height: 100%;
+        padding: 60px 0px 0px 0px;
+    }
+
+    .Redes2 img{                                                                        /*  Redes2 imagen  */                                                   
+        width: 60px;
+        height: 60px;
+        text-decoration: none;
+        filter: invert(100%);
+        margin: auto;
+        transition: filter 0.3s ease, transform 0.3s ease;
+    }
+
+    .Redes2 img:hover{  
+        filter: invert(70%) sepia(100%) saturate(200%) hue-rotate(180deg);
+        transform: scale(1.1);                                                                /*  Redes2 hover  */
+    }
+
+    #Pie2{                                                   /* -- Sección Pie 2 ------------------------- */                                            
+        text-align: center;
+        padding: 30px 50px 30px 50px;        
+    }
+
+    #Pie2 h4{                                                                          /*  Texto Copyright */                                                        
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+    }
+/* == E.S. FINAL FOOTER ================================================================================== */
